@@ -90,22 +90,34 @@ const items=[
 return(
 <section className="relative w-full text-white overflow-hidden min-h-screen flex flex-col justify-center items-center bg-black font-[Pretendard]">
 <div ref={bgRef} className="absolute inset-0"/>
-<div className="section-wrapper flex flex-col items-center text-center space-y-8 relative z-10">
-<motion.h2
-initial={{opacity:0,x:-80}}
-whileInView={{opacity:1,x:0}}
-transition={{duration:0.7,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
-className="section-label-w"
+<div className="section-wrapper flex flex-col items-center text-center relative z-10">
+
+<motion.p
+initial={{ opacity: 0, y: 40 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.8, ease: 'easeOut' }}
+viewport={{ once: true, amount: 0.3 }}
+className="service-section-label"
 >
-Philosophy
-</motion.h2>
+PHILOSOPHY
+</motion.p>
+
+<motion.h3
+initial={{ opacity: 0, y: 60 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.8, ease: 'easeOut' }}
+viewport={{ once: true, amount: 0.3 }}
+className="main-banner-title-w mb-[30px]"
+>
+개발을 넘어선<br/>비즈니스의 가치까지 정밀하게
+</motion.h3>
+
 <motion.p
 initial={{opacity:0,y:40}}
 whileInView={{opacity:1,y:0}}
-transition={{duration:0.6,delay:0.15,ease:'easeOut'}}
+transition={{duration:0.7,delay:0.2,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="section-description-w text-center"
+className="service-summary"
 >
 퍼스는 사용성 기능성 정확성 보안 그리고 소통<br/>다섯 가지 가치의 균형으로 프로젝트의 본질을 완성합니다
 </motion.p>

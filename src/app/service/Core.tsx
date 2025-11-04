@@ -33,7 +33,7 @@ return(
 initial={{opacity:0,x:-80}}
 animate={isValueInView?{opacity:1,x:0}:{}}
 transition={{duration:0.7,ease:'easeOut'}}
-className="section-label-w"
+className="service-section-label text-left"
 >
 Our Value
 </motion.h2>

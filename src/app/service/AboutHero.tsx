@@ -106,33 +106,62 @@ return(
 <section className="relative w-full h-screen overflow-hidden bg-black font-[Pretendard]">
 <canvas className="js-canvas absolute top-0 left-0 w-full h-full" />
 <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10">
-<motion.div
-initial={{opacity:0,y:30}}
-animate={{opacity:1,y:0}}
-transition={{duration:0.8,delay:0.3,ease:'easeOut'}}
-className="relative z-[2] max-w-[900px] w-full px-4 text-center"
->
-<motion.h2
-initial={{opacity:0,y:60}}
-whileInView={{opacity:1,y:0}}
-transition={{duration:0.8,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
-className="main-banner-title-w mb-[30px]"
->
-비즈니스가 시장에서 경쟁력을 갖추는<br />결정적 차이를 설계합니다.
-</motion.h2>
+  <motion.div
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+    className="relative z-[2] max-w-[900px] w-full px-4 text-center"
+  >
+    <motion.p
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="service-section-label"
+    >
+      OUR MISSION
+    </motion.p>
 
-<motion.p
-initial={{opacity:0,y:60}}
-whileInView={{opacity:1,y:0}}
-transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
-className="banner-subtitle-w"
->
-기술력은 당연합니다. 우리는 기술을 넘어, 당신의 비즈니스 목표 달성을 위한<br />이기는 전략을 수립하고 그 모든 과정을 설계하여 결과로 증명합니다.
-</motion.p>
-</motion.div>
+    <motion.h2
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="main-banner-title-w mb-[30px]"
+    >
+      비즈니스가 시장에서 경쟁력을 갖추는<br />결정적 차이를 설계합니다.
+    </motion.h2>
+
+    <motion.p
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
+      viewport={{ once: true, amount: 0.3 }}
+      className="service-summary"
+    >
+      기술력은 당연합니다. 우리는 기술을 넘어, 당신의 비즈니스 목표 달성을 위한<br />이기는 전략을 수립하고 그 모든 과정을 설계하여 결과로 증명합니다.
+    </motion.p>
+  </motion.div>
 </div>
+
+
+<div className="absolute top-[73vh] left-1/2 -translate-x-1/2 z-20">
+  <div className="relative w-[2.3px] h-[180px] bg-white/25 overflow-hidden rounded-full">
+    <div className="absolute top-0 left-0 w-full h-full">
+      <div className="absolute top-0 left-0 w-full h-[60px] bg-white animate-scrollDown" />
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+@keyframes scrollDown {
+  0% { transform: translateY(-60px); }
+  100% { transform: translateY(180px); }
+}
+.animate-scrollDown {
+  animation: scrollDown 2.5s linear infinite;
+}
+`}</style>
 </section>
 )
 }

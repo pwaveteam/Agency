@@ -9,7 +9,6 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Button } from '@/components/ui/button'
 import { UploadCloud, FileIcon, X } from 'lucide-react'
-import { toast } from 'sonner'
 
 
 const ContactForm: React.FC = () => {
@@ -78,7 +77,7 @@ if (form.files.length > 0) {
 const totalSize = form.files.reduce((sum, f) => sum + f.size, 0)
 const maxSize = 2 * 1024 * 1024
 if (totalSize > maxSize) {
-setStatus('파일 총 용량이 2MB를 초과합니다. 파일을 줄여주세요.')
+setStatus('파일 총 용량이 2MB를 초과합니다. 첨부가 어려운 경우 info@pulsewave.kr로 직접 보내주세요.')
 setIsSubmitting(false)
 return
 }
