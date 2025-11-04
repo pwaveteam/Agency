@@ -9,6 +9,8 @@ import { Checkbox } from '@/components/ui/checkbox'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { Button } from '@/components/ui/button'
 import { UploadCloud, FileIcon, X } from 'lucide-react'
+import { toast } from 'sonner'
+
 
 const ContactForm: React.FC = () => {
 const [form, setForm] = useState({
@@ -102,12 +104,23 @@ time: new Date().toLocaleString('ko-KR'),
 agree: form.agree ? '동의함' : '미동의'
 }
 
+const attachments = await Promise.all(
+form.files.map(async (file) => {
+const base64 = await fileToBase64(file)
+return { name: file.name, data: base64.split(',')[1] }
+})
+)
+
 const result = await emailjs.send(
 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
 process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-templateParams,
+{
+...templateParams,
+attachments
+},
 process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
 )
+
 
 if (result.status === 200) {
 setStatus('문의가 정상적으로 접수되었습니다. 빠른 시일 내에 답변드리겠습니다.')
@@ -398,7 +411,7 @@ className="mt-[2px] shrink-0"
 {status && (
 <p
 className={`text-center mt-6 text-sm font-medium ${
-status.includes('문의가 정상적으로') ? 'text-green-600' :
+status.includes('문의가 정상적으로') ? 'text-blue-600' :
 status.includes('실패') || status.includes('오류') || status.includes('파일') ? 'text-red-600' :
 'text-gray-600'
 }`}
