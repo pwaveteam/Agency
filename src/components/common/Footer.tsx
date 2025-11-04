@@ -9,8 +9,9 @@ const sns=[
 ]
 
 return(
-<footer className="w-full bg-black text-white border-t border-white/10 pt-[60px] pb-[40px] max-md:pt-[40px] max-md:pb-[30px]">
-<div className="max-w-[1100px] mx-auto px-6 flex flex-col md:flex-row justify-between gap-10 max-md:gap-6">
+<footer className="w-full bg-black text-white border-t border-white/10">
+<div className="section-wrapper py-[60px] max-md:py-[40px]">
+<div className="flex flex-col md:flex-row justify-between gap-10 max-md:gap-6">
 <div>
 <p className="text-[13px] md:text-[14px] text-white/40 leading-[1.7]">
 24, Gwanggyohosu-ro 152beon-gil, Yeongtong-gu, Suwon-si,<br/>
@@ -26,8 +27,10 @@ info@pulsewave.kr · 070-4149-3331
 ))}
 </div>
 </div>
-<div className="max-w-[1100px] mx-auto px-6 mt-[35px] max-md:mt-[25px] border-t border-white/10 pt-[18px]">
+
+<div className="border-t border-white/10 mt-[35px] max-md:mt-[25px] pt-[18px]">
 <p className="text-[12px] md:text-[14px] text-white/30">© {new Date().getFullYear()} Pulsewave Co. All rights reserved</p>
+</div>
 </div>
 </footer>
 )}

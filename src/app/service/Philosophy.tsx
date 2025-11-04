@@ -107,7 +107,7 @@ initial={{ opacity: 0, y: 60 }}
 whileInView={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.8, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
-className="main-banner-title-w mb-[30px]"
+className="banner-block mb-[30px]"
 >
 개발을 넘어선<br/>비즈니스의 가치까지 정밀하게
 </motion.h3>

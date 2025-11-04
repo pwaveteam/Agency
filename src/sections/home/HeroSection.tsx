@@ -45,7 +45,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="main-banner-title-w mb-[30px]"
+className="banner-block mb-[30px]"
 >
 비즈니스를 설계하고, 기술로 완성합니다.
 </motion.h2>
@@ -55,7 +55,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-subtitle-w mb-[40px]"
+className="service-summary mb-[40px]"
 >
 아이디어 구상을 넘어, 실행 가능한 전략과 시장을 움직이는 프로덕트까지,<br />
 퍼스는 단순 개발사가 아닌, 당신의 A to Z 비즈니스 파트너입니다.

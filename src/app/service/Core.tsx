@@ -27,7 +27,7 @@ return(
 `}</style>
 
 <div ref={valueRef} className="relative overflow-hidden">
-<div className="section-wrapper flex flex-col md:flex-row items-center justify-between gap-20 relative z-10">
+<div className="section-wrapper flex flex-col md:flex-row items-start justify-between gap-20 relative z-10">
 <div className="md:w-[45%] text-center space-y-6">
 <motion.h2
 initial={{opacity:0,x:-80}}
@@ -42,7 +42,7 @@ Our Value
 initial={{opacity:0,y:40}}
 animate={isValueInView?{opacity:1,y:0}:{}}
 transition={{duration:0.6,delay:0.15,ease:'easeOut'}}
-className="section-description-w"
+className="service-summary text-left"
 >
 전략, 기획, 디자인, 개발이 한 구조 안에서 움직이며,<br/>가장 효율적인 방법으로 브랜드의 성장을 실현합니다
 </motion.p>
@@ -72,7 +72,7 @@ className="flex items-start gap-6"
 <div className="text-[#6fb6ff]">{v.icon}</div>
 <div>
 <h3 className="text-[28px] font-semibold text-[#6fb6ff] mb-2 tracking-[-0.02em]">{v.title}</h3>
-<p className="description-w">{v.desc}</p>
+<p className="card-text-w">{v.desc}</p>
 </div>
 </motion.div>
 ))}

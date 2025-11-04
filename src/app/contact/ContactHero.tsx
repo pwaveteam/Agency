@@ -39,7 +39,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-title-w mb-[30px]"
+className="banner-block mb-[30px]"
 >
 “이런 것도 가능할까?” 망설여진다면,<br />가벼운 질문으로 시작해보세요.
 </motion.h2>
@@ -49,7 +49,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-subtitle-w"
+className="service-summary"
 >
 담당자 검토 후 1~2영업일 이내에 회신드리겠습니다.
 </motion.p>

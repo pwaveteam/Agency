@@ -67,7 +67,7 @@ viewport={{ once: true, amount: 0.3 }}
 <span className="flex-1 text-left">{faq.question}</span>
 </AccordionTrigger>
 <AccordionContent className="mt-4">
-<p className="description whitespace-pre-line">{faq.answer}</p>
+<p className="card-text whitespace-pre-line">{faq.answer}</p>
 </AccordionContent>
 </AccordionItem>
 </motion.div>

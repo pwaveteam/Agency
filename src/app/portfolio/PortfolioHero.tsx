@@ -39,7 +39,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-title-w mb-[30px]"
+className="banner-block mb-[30px]"
 >
 다양한 산업분야, 45개 이상의 프로젝트 수행<br />
 퍼스가 수행한 프로젝트 포트폴리오를 확인해 보세요.
@@ -50,7 +50,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-subtitle-w"
+className="service-summary"
 >
 기획부터 개발까지, 퍼스가 수행한 주요 프로젝트 사례를 소개합니다.
 </motion.p>

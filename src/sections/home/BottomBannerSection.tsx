@@ -23,7 +23,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="main-banner-title-w mb-[30px]"
+className="banner-block mb-[30px]"
 >
 아직 아이디어가 명확하지 않아도 괜찮습니다.<br />
 퍼스팀이 가장 합리적인 플랜을 제안해 드립니다.
@@ -34,7 +34,7 @@ initial={{opacity:0,y:60}}
 whileInView={{opacity:1,y:0}}
 transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
-className="banner-subtitle-w mb-[40px]"
+className="service-summary mb-[40px]"
 >
 지금 바로 문의해보세요.<br />
 아이디어를 구체화하는 가장 빠른 길입니다.
