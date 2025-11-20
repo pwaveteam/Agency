@@ -1,9 +1,7 @@
-// app/layout.tsx
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/common/Header'
-import Footer from '@/components/common/Footer'
 import FooterWrapper from '@/components/common/FooterWrapper'
 
 export const metadata: Metadata = {
@@ -26,10 +24,8 @@ icons: { icon: '/favicon.ico' }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 return (
 <html lang="ko">
-<body className="relative flex flex-col min-h-screen bg-white text-gray-900 antialiased">
-
-{/* Meta Pixel Code */}
-<Script id="fb-pixel" strategy="afterInteractive">
+<head>
+<Script id="fb-pixel" strategy="beforeInteractive">
 {`
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -43,21 +39,14 @@ fbq('init', '824895280150026');
 fbq('track', 'PageView');
 `}
 </Script>
-
+</head>
+<body className="relative flex flex-col min-h-screen bg-white text-gray-900 antialiased">
 <noscript>
-<img
-height="1"
-width="1"
-style={{ display: 'none' }}
-src="https://www.facebook.com/tr?id=824895280150026&ev=PageView&noscript=1"
-/>
+<img height="1" width="1" style={{display:'none'}} src="https://www.facebook.com/tr?id=824895280150026&ev=PageView&noscript=1" />
 </noscript>
-{/* End Meta Pixel Code */}
-
 <div className="fixed top-0 left-0 w-full z-[9999] isolate">
 <Header />
 </div>
-
 <main className="flex-1 relative z-0">{children}</main>
 <FooterWrapper />
 </body>
