@@ -68,12 +68,22 @@ transition={{duration:0.8,delay:0.3,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="text-center space-x-[20px]"
 >
-<Button asChild variant="primary">
+<Button
+asChild
+variant="primary"
+className="md:w-auto max-md:w-full max-md:block [&>a]:max-md:block [&>a]:max-md:w-full max-md:mb-[12px]"
+>
 <a href="/contact">홈페이지 개발 문의</a>
 </Button>
-<Button asChild variant="whiteOutline">
+
+<Button
+asChild
+variant="whiteOutline"
+className="md:w-auto max-md:w-full max-md:block [&>a]:max-md:block [&>a]:max-md:w-full"
+>
 <a href="/portfolio">포트폴리오 보기</a>
 </Button>
+
 </motion.div>
 </div>
 </motion.div>
