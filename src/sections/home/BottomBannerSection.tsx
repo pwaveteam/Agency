@@ -25,8 +25,15 @@ transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="banner-block mb-[30px]"
 >
+<span className="hidden md:inline">
 아직 아이디어가 명확하지 않아도 괜찮습니다.<br />
 퍼스팀이 가장 합리적인 플랜을 제안해 드립니다.
+</span>
+<span className="md:hidden">
+아직 아이디어가 명확하지 않아도<br />
+괜찮습니다. 퍼스팀이 가장 합리적인<br />
+플랜을 제안해 드립니다.
+</span>
 </motion.h2>
 
 <motion.p

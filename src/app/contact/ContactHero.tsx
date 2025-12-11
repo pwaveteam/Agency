@@ -51,7 +51,13 @@ transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="service-summary"
 >
+<span className="hidden md:inline">
 담당자 검토 후 1~2영업일 이내에 회신드리겠습니다.
+</span>
+<span className="md:hidden">
+담당자 검토 후<br />
+1~2영업일 이내에 회신드리겠습니다.
+</span>
 </motion.p>
 </div>
 </motion.div>

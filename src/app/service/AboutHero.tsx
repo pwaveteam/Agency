@@ -133,13 +133,21 @@ className="banner-block mb-[30px]"
 </motion.h2>
 
 <motion.p
-initial={{ opacity: 0, y: 60 }}
-whileInView={{ opacity: 1, y: 0 }}
-transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
-viewport={{ once: true, amount: 0.3 }}
-className="service-summary"
+  initial={{ opacity: 0, y: 60 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
+  viewport={{ once: true, amount: 0.3 }}
+  className="service-summary"
 >
-기술력은 당연합니다. 우리는 기술을 넘어, 당신의 비즈니스 목표 달성을 위한<br />이기는 전략을 수립하고 그 모든 과정을 설계하여 결과로 증명합니다.
+  <span className="hidden md:inline">
+    기술력은 당연합니다. 우리는 기술을 넘어, 당신의 비즈니스 목표 달성을 위한<br />
+    이기는 전략을 수립하고 그 모든 과정을 설계하여 결과로 증명합니다.
+  </span>
+  <span className="md:hidden">
+    기술력은 당연합니다.<br />
+    우리는 기술을 넘어, 당신의 비즈니스 목표 달성을 위한<br />
+    이기는 전략을 수립하고 그 모든 과정을 설계하여 결과로 증명합니다.
+  </span>
 </motion.p>
 </motion.div>
 </div>

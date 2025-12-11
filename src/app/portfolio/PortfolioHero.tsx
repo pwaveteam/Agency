@@ -41,8 +41,15 @@ transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="banner-block mb-[30px]"
 >
+<span className="hidden md:inline">
 다양한 산업분야, 45개 이상의 프로젝트 수행<br />
 퍼스가 수행한 프로젝트 포트폴리오를 확인해 보세요.
+</span>
+<span className="md:hidden">
+다양한 산업분야,<br />
+45개 이상의 프로젝트 수행<br />
+퍼스가 수행한 포트폴리오를 확인해 보세요.
+</span>
 </motion.h2>
 
 <motion.p
@@ -52,7 +59,13 @@ transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="service-summary"
 >
+<span className="hidden md:inline">
 기획부터 개발까지, 퍼스가 수행한 주요 프로젝트 사례를 소개합니다.
+</span>
+<span className="md:hidden">
+기획부터 개발까지,<br />
+퍼스가 수행한 주요 프로젝트 사례를 소개합니다.
+</span>
 </motion.p>
 </div>
 </motion.div>

@@ -3,6 +3,7 @@ import Script from 'next/script'
 import './globals.css'
 import Header from '@/components/common/Header'
 import FooterWrapper from '@/components/common/FooterWrapper'
+import { Toaster } from '@/components/ui/sonner'
 
 export const metadata: Metadata = {
 title: 'PULSE LAB, 홈페이지 제작부터 플랫폼 MVP 개발까지',
@@ -50,6 +51,7 @@ fbq('track', 'PageView');
 <main className="flex-1 relative z-0">{children}</main>
 
 <FooterWrapper />
+<Toaster />
 </body>
 </html>
 )

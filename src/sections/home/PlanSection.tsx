@@ -14,8 +14,23 @@ return(
 <div className="mb-[60px] text-left">
 <motion.h2 initial={{opacity:0,x:-100}} whileInView={{opacity:1,x:0}} transition={{duration:0.6,ease:'easeOut'}} viewport={{once:true,amount:0.3}} className="section-label-w">PLAN</motion.h2>
 <motion.p initial={{opacity:0,y:50}} whileInView={{opacity:1,y:0}} transition={{duration:0.6,delay:0.15,ease:'easeOut'}} viewport={{once:true,amount:0.3}} className="section-heading-w">부담없이 시작하는 합리적인 제작 플랜</motion.p>
-<motion.p initial={{opacity:0,y:60}} whileInView={{opacity:1,y:0}} transition={{duration:0.6,delay:0.3,ease:'easeOut'}} viewport={{once:true,amount:0.3}} className="section-description-w">초기 투자 부담은 낮추고, 단계에 맞게 선택할 수 있는 플랜<br/>가볍게 시작해도, 원하는 결과로 이어집니다.</motion.p>
-</div>
+<motion.p
+  initial={{opacity:0,y:60}}
+  whileInView={{opacity:1,y:0}}
+  transition={{duration:0.6,delay:0.3,ease:'easeOut'}}
+  viewport={{once:true,amount:0.3}}
+  className="section-description-w"
+>
+  <span className="hidden md:inline">
+    초기 투자 부담은 낮추고, 단계에 맞게 선택할 수 있는 플랜<br/>
+    가볍게 시작해도, 원하는 결과로 이어집니다.
+  </span>
+  <span className="md:hidden">
+    초기 투자 부담은 낮추고, 단계에 맞게<br/>
+    선택할 수 있는 플랜<br/>
+    가볍게 시작해도, 원하는 결과로 이어집니다.
+  </span>
+</motion.p></div>
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[22px]">
 {plans.map((plan,i)=>(

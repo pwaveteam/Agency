@@ -33,8 +33,15 @@ transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
 className="section-description"
 >
+<span className="hidden md:inline">
 시장에 개발사는 많지만, 든든한 비즈니스 파트너를 찾는다면 퍼스가 정답입니다.<br />
 화려한 미사여구보다 견고한 결과물로 증명합니다.
+</span>
+<span className="md:hidden">
+시장에 개발사는 많지만,<br />
+든든한 비즈니스 파트너를 찾는다면<br />
+퍼스가 정답입니다.
+</span>
 </motion.p>
 
 <motion.div
@@ -45,11 +52,11 @@ viewport={{ once: true, amount: 0.3 }}
 className="flex justify-center"
 >
 <Button
-  asChild
-  variant="primary"
-  className="text-[16px] rounded-[10px] px-[33px] py-[15px] transition-transform duration-500 hover:-translate-y-[3px]"
+asChild
+variant="primary"
+className="text-[16px] rounded-[10px] px-[33px] py-[15px] transition-transform duration-500 hover:-translate-y-[3px]"
 >
-  <a href="#portfolio">포트폴리오 보기</a>
+<a href="#portfolio">포트폴리오 보기</a>
 </Button>
 
 </motion.div>

@@ -71,8 +71,15 @@ transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
 className="section-description text-left"
 >
-과정마다 고객의 의견을 세심히 반영하며 완성도를 높여갑니다<br />
+<span className="hidden md:inline">
+과정마다 고객의 의견을 세심히 반영하며 완성도를 높여갑니다.<br />
 각 단계에서 방향을 확인하고, 결과에 집중합니다.
+</span>
+<span className="md:hidden">
+과정마다 고객의 의견을 세심히 반영하며<br />
+완성도를 높여갑니다.<br />
+각 단계에서 방향을 확인하고, 결과에 집중합니다.
+</span>
 </motion.p>
 </div>
 

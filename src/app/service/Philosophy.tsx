@@ -119,7 +119,15 @@ transition={{duration:0.7,delay:0.2,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="service-summary"
 >
-퍼스는 사용성 기능성 정확성 보안 그리고 소통<br/>다섯 가지 가치의 균형으로 프로젝트의 본질을 완성합니다
+<span className="hidden md:inline">
+퍼스는 사용성 기능성 정확성 보안 그리고 소통<br/>
+다섯 가지 가치의 균형으로 프로젝트의 본질을 완성합니다
+</span>
+<span className="md:hidden">
+퍼스는 사용성 기능성 정확성 보안 그리고 소통<br/>
+다섯 가지 가치의 균형으로<br/>
+프로젝트의 본질을 완성합니다
+</span>
 </motion.p>
 
 <div className="relative w-full justify-center items-center h-[420px] hidden md:flex">
