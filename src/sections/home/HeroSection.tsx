@@ -47,7 +47,7 @@ initial={{ opacity: 0, y: 60 }}
 whileInView={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.8, ease: 'easeOut' }}
 viewport={{ once: true, amount: 0.3 }}
-className="banner-block mb-[30px]"
+className="mainbanner-block mb-[30px]"
 >
 <span className="hidden md:inline">
 비즈니스를 설계하고, 기술로 완성합니다.

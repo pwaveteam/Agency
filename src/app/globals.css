@@ -182,6 +182,10 @@ font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto
 }
 
 .banner-block {
-    @apply text-[26px] md:text-[39px] font-semibold leading-[130%] tracking-[-0.019em] text-center text-white;
-  }
+@apply text-[23px] md:text-[36px] font-semibold leading-[130%] tracking-[-0.019em] text-center text-white;
+}
+
+.mainbanner-block {
+@apply text-[28px] md:text-[39px] font-semibold leading-[130%] tracking-[-0.019em] text-center text-white;
+}
 }
