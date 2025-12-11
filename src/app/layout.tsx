@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/common/Header'
 import FooterWrapper from '@/components/common/FooterWrapper'
 import { Toaster } from '@/components/ui/sonner'
+import FloatingButtons from '@/components/common/FloatingButtons'
 
 export const metadata: Metadata = {
 title: 'PULSE LAB, 홈페이지 제작부터 플랫폼 MVP 개발까지',
@@ -52,6 +53,7 @@ fbq('track', 'PageView');
 
 <FooterWrapper />
 <Toaster />
+<FloatingButtons />
 </body>
 </html>
 )

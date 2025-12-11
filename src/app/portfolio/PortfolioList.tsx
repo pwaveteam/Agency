@@ -27,11 +27,11 @@ transition={{ duration: 0.8, ease: 'easeOut' }}
 <h2 className="section-heading !text-left !mb-[10px]">PORTFOLIO</h2>
 <p className="section-description !text-left !mb-[30px]">
 <span className="hidden md:inline">
-기획부터 디자인, 개발까지 완성도 높은 웹사이트 제작 사례를 소개합니다.
+웹사이트부터 산업 특화 플랫폼까지, 다양한 프로젝트 사례를 소개합니다.
 </span>
 <span className="md:hidden">
-기획부터 디자인, 개발까지<br />
-완성도 높은 웹사이트 제작 사례를 소개합니다.
+웹사이트부터 산업 특화 플랫폼까지,<br />
+다양한 프로젝트 사례를 소개합니다.
 </span>
 </p>
 </div>

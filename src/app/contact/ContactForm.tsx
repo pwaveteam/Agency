@@ -277,11 +277,11 @@ transition={{ duration: 0.6, ease: 'easeOut' }}
 <h2 className="section-heading !text-left !mb-2.5">CONTACT</h2>
 <p className="section-description !text-left !mb-8">
 <span className="hidden md:inline">
-프로젝트 문의를 남겨주시면 담당자가 빠르게 연락드리겠습니다.
+문의 사항을 남겨주시면 빠르게 답변드리겠습니다.
 </span>
 <span className="md:hidden">
-프로젝트 문의를 남겨주시면<br />
-담당자가 빠르게 연락드리겠습니다.
+문의 사항을 남겨주시면<br />
+빠르게 답변드리겠습니다.
 </span>
 </p>
 </div>

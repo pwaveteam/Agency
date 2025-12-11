@@ -1,30 +1,32 @@
 'use client'
-import { motion } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Button } from '@/components/ui/button'
 
 export default function HeroSection() {
 const [isVideoLoaded, setIsVideoLoaded] = useState(false)
+const { scrollY } = useScroll()
+const scrollIndicatorOpacity = useTransform(scrollY, [0, 300], [1, 0])
 
 useEffect(() => {
-const iframe=document.querySelector<HTMLIFrameElement>('#heroVideo')
-if(iframe) iframe.addEventListener('load',()=>setIsVideoLoaded(true))
+const iframe = document.querySelector<HTMLIFrameElement>('#heroVideo')
+if (iframe) iframe.addEventListener('load', () => setIsVideoLoaded(true))
 }, [])
 
-return(
+return (
 <section className="container-default mt-[100px] mb-[80px]">
 <motion.div
 id="mainBanner"
-initial={{opacity:0}}
-animate={{opacity:1}}
-transition={{duration:1,ease:'easeOut'}}
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{ duration: 1, ease: 'easeOut' }}
 className="relative h-[80vh] flex items-center justify-center text-center text-white font-sans overflow-hidden rounded-[36px] shadow-[0_10px_40px_rgba(0,0,0,0.25)] bg-black"
 >
-{!isVideoLoaded&&(
+{!isVideoLoaded && (
 <motion.div
-initial={{opacity:1}}
-animate={{opacity:0}}
-transition={{duration:0.8,delay:0.2}}
+initial={{ opacity: 1 }}
+animate={{ opacity: 0 }}
+transition={{ duration: 0.8, delay: 0.2 }}
 className="absolute inset-0 z-[1] bg-black/80 backdrop-blur-xl rounded-[36px]"
 />
 )}
@@ -41,10 +43,10 @@ allowFullScreen
 
 <div className="relative z-[2] w-full px-4">
 <motion.h2
-initial={{opacity:0,y:60}}
-whileInView={{opacity:1,y:0}}
-transition={{duration:0.8,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
+initial={{ opacity: 0, y: 60 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.8, ease: 'easeOut' }}
+viewport={{ once: true, amount: 0.3 }}
 className="banner-block mb-[30px]"
 >
 <span className="hidden md:inline">
@@ -57,10 +59,10 @@ className="banner-block mb-[30px]"
 </motion.h2>
 
 <motion.p
-initial={{opacity:0,y:60}}
-whileInView={{opacity:1,y:0}}
-transition={{duration:0.8,delay:0.15,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
+initial={{ opacity: 0, y: 60 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.8, delay: 0.15, ease: 'easeOut' }}
+viewport={{ once: true, amount: 0.3 }}
 className="service-summary mb-[40px]"
 >
 <span className="hidden md:inline">
@@ -77,10 +79,10 @@ className="service-summary mb-[40px]"
 </motion.p>
 
 <motion.div
-initial={{opacity:0,y:60}}
-whileInView={{opacity:1,y:0}}
-transition={{duration:0.8,delay:0.3,ease:'easeOut'}}
-viewport={{once:true,amount:0.3}}
+initial={{ opacity: 0, y: 60 }}
+whileInView={{ opacity: 1, y: 0 }}
+transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+viewport={{ once: true, amount: 0.3 }}
 className="text-center space-x-[20px]"
 >
 <Button
@@ -98,9 +100,31 @@ className="md:w-auto max-md:w-full max-md:block [&>a]:max-md:block [&>a]:max-md:
 >
 <a href="/portfolio">포트폴리오 보기</a>
 </Button>
-
 </motion.div>
 </div>
+
+<motion.div
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{ duration: 1, delay: 1 }}
+style={{ opacity: scrollIndicatorOpacity }}
+className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[2] flex flex-col items-center gap-2 md:gap-2.5"
+>
+<span className="text-[10px] md:text-xs text-white/70 tracking-widest uppercase">Scroll</span>
+<div className="w-5 h-9 md:w-5 md:h-9 border border-white/40 rounded-full relative overflow-hidden">
+<motion.div
+animate={{ y: ['0%', '30%', '0%'] }}
+transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+className="absolute top-1 md:top-1 left-1/2 -translate-x-1/2 w-px h-2 md:h-2 bg-white/80 rounded-full"
+/>
+</div>
+<motion.div
+animate={{ y: ['0%', '15%', '0%'] }}
+transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+className="w-px h-12 md:h-16 bg-gradient-to-b from-white/60 to-transparent"
+/>
+</motion.div>
+
 </motion.div>
 </section>
 )
