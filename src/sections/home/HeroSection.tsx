@@ -108,7 +108,7 @@ initial={{ opacity: 0 }}
 animate={{ opacity: 1 }}
 transition={{ duration: 1, delay: 1 }}
 style={{ opacity: scrollIndicatorOpacity }}
-className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 z-[2] flex flex-col items-center gap-2 md:gap-2.5"
+className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 z-[2] flex flex-col items-center gap-1.5 md:gap-2.5 max-md:hidden"
 >
 <span className="text-[10px] md:text-xs text-white/70 tracking-widest uppercase">Scroll</span>
 <div className="w-5 h-9 md:w-5 md:h-9 border border-white/40 rounded-full relative overflow-hidden">
