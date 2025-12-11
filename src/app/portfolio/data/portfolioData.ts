@@ -1,147 +1,231 @@
 export interface PortfolioItem {
-id: number
-theme: string
-summary: string
-overview: string
-strategy: string
-thumbnail: string
-detailImage: string
-}
-
-export const portfolioData: PortfolioItem[] = [
-{
-id: 1,
-theme: '관제시스템/로보틱스/대시보드',
-summary: '로봇 관제시스템 대시보드 구축',
-overview:
-'로봇 운영 데이터를 실시간으로 시각화해 현장 상태를 한눈에 파악하고\n이상 징후를 빠르게 감지할 수 있는 관제 대시보드',
-strategy:
-'사용자가 로봇의 상태를 직관적으로 모니터링할 수 있도록 핵심 데이터를 시각적으로 우선 배치하고\n반응형 UI로 다양한 환경에서 동일한 사용 경험을 제공함\n실시간 알림과 상태 변화를 명확히 인지할 수 있도록 UX 중심으로 설계함',
-thumbnail: '/thumbnail/thumbnail-3.png',
-detailImage: '/images/portfolio/detail3.jpg',
-},
-{
-id: 2,
-theme: '테크 / 서비스',
-summary: 'MVP 중심 개발 · 기술 브랜드 웹사이트',
-overview:
-'기술 중심 브랜드 사이트로 제품과 기술 철학을 시각적으로 전달했습니다.',
-strategy:
-'MVP 중심의 개발 접근 방식으로 빠른 피드백과 반복 개선을 가능하게 했습니다.',
-thumbnail: '/thumbnail/thumbnail-10.png',
-detailImage: '/images/portfolio/detail10.jpg',
-},
-
-{
-id: 3,
-theme: '기업 홈페이지',
-summary: '업무 효율 극대화 · 관리자 페이지 연동',
-overview:
-'관리자 페이지와 프론트 시스템을 통합한 업무 효율 중심 사이트입니다.',
-strategy:
-'기업 내 다양한 부서별 접근 권한을 통합하고, 워크플로우를 디지털화했습니다.',
-thumbnail: '/thumbnail/thumbnail-6.png',
-detailImage: '/images/portfolio/detail6.jpg',
-},
-{
-id: 4,
-theme: '문화 / 예술',
-summary: '감각적 인터페이스 · 애니메이션 활용',
-overview:
-'감각적인 인터페이스와 인터랙티브 애니메이션을 중심으로 구성된 문화 플랫폼.',
-strategy:
-'전시 정보, 예약 기능을 통합하고, 시각적 몰입도를 높였습니다.',
-thumbnail: '/thumbnail/thumbnail-8.png',
-detailImage: '/images/portfolio/detail8.jpg',
-},
-{
-id: 5,
-theme: '기관 / 교육',
-summary: '정보 구조화 · 접근성 중심 공공사이트',
-overview:
-'정보 구조화와 접근성을 중심으로 한 공공기관형 교육 플랫폼입니다.',
-strategy:
-'행정 문서, 교육 자료를 시각적으로 구조화하여 접근성을 높였습니다.',
-thumbnail: '/thumbnail/thumbnail-5.png',
-detailImage: '/images/portfolio/detail5.jpg',
-},
-
-
-{
-id: 6,
-theme: '기업 홈페이지',
-summary: '기업의 비전과 정체성을 시각적으로 표현',
-overview:
-'인간의 감각과 인공지능의 경계를 탐구하는 기술기업의 아이덴티티를 시각적으로 표현한 원페이지 반응형 랜딩 사이트\nAI 기반 기술력과 브랜드 철학을 직관적 인터랙션으로 전달함',
-strategy:
-'어두운 컬러톤과 유동적인 그래픽을 활용해 기술적 깊이와 미래지향적 이미지를 강조함\n스크롤 중심의 인터랙션과 섹션 전환 효과로 브랜드의 비전을 감각적으로 경험할 수 있도록 설계함',
-thumbnail: '/thumbnail/thumbnail-1.png',
-detailImage: '/images/portfolio/detail1.jpg',
-},
-{
-id: 8,
-theme: '헬스케어',
-summary: '신뢰감 중심 UI · 사용자 참여 유도형 구조',
-overview:
-'신뢰감 중심의 UI와 환자 참여형 서비스 구조를 기반으로 한 플랫폼입니다.',
-strategy:
-'의료 데이터 보안과 접근성을 모두 고려한 UX 설계를 적용했습니다.',
-thumbnail: '/thumbnail/thumbnail-11.png',
-detailImage: '/images/portfolio/detail11.jpg',
-},
-{
-id: 7,
-theme: 'AI/견적/자동화',
-summary: 'AI 기반 자동견적 시스템 구축',
-overview:
-'특수 장비 시장의 복잡한 견적 산정을 AI와 빅데이터로 자동화해\n실시간 맞춤형 견적을 제공하는 자동화 플랫폼',
-strategy:
-'사용자 입력 데이터를 기반으로 제품 사양에 맞는 견적을 자동 산출하도록 설계함\n데이터 구조를 최적화해 견적 프로세스 속도를 향상시키고\n관리자가 실시간으로 결과를 확인하고 수정할 수 있는 UI를 구현함',
-thumbnail: '/thumbnail/thumbnail-4.png',
-detailImage: '/images/portfolio/detail4.jpg',
-},
-{
-id: 9,
-theme: '공공기관',
-summary: '데이터 기반 UX · 정책 서비스 플랫폼',
-overview:
-'정책 서비스 플랫폼으로 사용자 중심 정보 설계 구조를 채택했습니다.',
-strategy:
-'데이터 기반 UX 설계로 정책 참여 경험을 향상시켰습니다.',
-thumbnail: '/thumbnail/thumbnail-12.png',
-detailImage: '/images/portfolio/detail12.jpg',
-},
-{
-id: 10,
-theme: '브랜드 사이트',
-summary: '콘셉트 기획 · 아이덴티티 중심 디자인',
-overview:
-'브랜드 아이덴티티를 감각적으로 표현한 컨셉 중심 디자인.',
-strategy:
-'컬러 모션과 인터랙션을 활용해 브랜드 콘셉트를 직관적으로 표현했습니다.',
-thumbnail: '/thumbnail/thumbnail-7.png',
-detailImage: '/images/portfolio/detail7.jpg',
-},
-{
-id: 11,
-theme: '공공기관',
-summary: '데이터 기반 UX · 정책 서비스 플랫폼',
-overview:
-'정책 서비스 플랫폼으로 사용자 중심 정보 설계 구조를 채택했습니다.',
-strategy:
-'데이터 기반 UX 설계로 정책 참여 경험을 향상시켰습니다.',
-thumbnail: '/thumbnail/thumbnail-9.png',
-detailImage: '/images/portfolio/detail9.jpg',
-},
-{
-id: 12,
-theme: '글로벌 이커머스',
-summary: '인테리어 커머스 브랜드를 설계한 프로젝트',
-overview:
-'사용자 데이터를 기반으로 인테리어 옵션을 추천하고\n브랜드별 쇼룸과 3D 뷰를 제공하는 큐레이션 커머스 플랫폼',
-strategy:
-'대규모 이미지 데이터를 효율적으로 로딩하기 위해 최적화된 필터링과 캐싱 구조를 적용함\n사용자 행동 기반 추천 알고리즘과 실시간 검색 기능을 결합해 탐색 경험을 강화함\n3D 뷰를 통해 브랜드별 쇼룸을 직관적으로 비교할 수 있도록 UX를 구성함',
-thumbnail: '/thumbnail/thumbnail-2.png',
-detailImage: '/images/portfolio/detail2.jpg',
-},
-]
+    id: number
+    theme: string
+    summary: string
+    overview: string
+    strategy: string
+    thumbnail: string
+    detailImage: string
+    }
+    
+    export const portfolioData: PortfolioItem[] = [
+    {
+    id: 1,
+    theme: 'IoT / 관제 / 대시보드',
+    summary: '실시간 로봇 관제 대시보드 플랫폼',
+    overview: `"로봇 운영 현황을 한눈에 파악하는 실시간 관제 대시보드"
+    로봇 운영 데이터를 실시간으로 시각화해 현장 상태를 한눈에 파악할 수 있습니다.
+    이상 징후를 빠르게 감지하고 즉각 대응할 수 있는 관제 대시보드를 구축했습니다.`,
+    strategy: `직관적 데이터 시각화: 사용자가 로봇의 상태를 직관적으로 모니터링할 수 있도록
+    핵심 데이터를 시각적으로 우선 배치했습니다.
+    
+    반응형 UI 설계: 다양한 디바이스 환경에서 동일한 사용 경험을 제공하도록
+    반응형 UI를 적용했습니다.
+    
+    실시간 알림 UX: 실시간 알림과 상태 변화를 명확히 인지할 수 있도록
+    UX 중심으로 설계했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-3.png',
+    detailImage: '/images/portfolio/detail3.jpg',
+    },
+    {
+    id: 2,
+    theme: 'SaaS / 안전관리 / B2B',
+    summary: '중대재해 예방 B2B SaaS 플랫폼',
+    overview: `"현장 근로자의 사용성을 최우선으로 고려한 O2O 안전 플랫폼"
+    IT 기기에 익숙하지 않은 고연령층 근로자와 복잡한 데이터를 다루는 관리자 모두를 만족시키는 UX를 설계했습니다.
+    현장과 사무실의 업무 환경 차이를 이해하고 반영한 맞춤형 인터페이스 구축 사례입니다.`,
+    strategy: `현장 맞춤형 UI 설계: 장갑을 착용한 상태에서도 조작이 용이하도록 터치 영역을 확장하고,
+    뎁스(Depth)를 최소화한 '원터치 입력 시스템'을 고안했습니다.
+    
+    정보 구조(IA) 최적화: 방대한 안전 보건 서류 양식을 디지털화하면서,
+    업무 흐름에 맞춰 메뉴 구조를 재설계하여 관리자의 업무 시간을 획기적으로 단축시켰습니다.
+    
+    반응형 웹 & 앱 최적화: 다양한 디바이스 환경에서도 일관된 사용자 경험을 제공하도록
+    반응형 웹 기술과 크로스 플랫폼 개발 방식을 적용했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-10.png',
+    detailImage: '/images/portfolio/detail10.jpg',
+    },
+    
+    {
+    id: 3,
+    theme: '매칭 플랫폼 / 커머스',
+    summary: '브랜드와 크리에이터 연결 플랫폼',
+    overview: `"브랜드와 크리에이터가 만나는 가장 감각적인 스테이지"
+    텍스트 위주의 딱딱한 매칭 사이트를 탈피했습니다.
+    크리에이터의 개성과 포트폴리오가 돋보이도록 비주얼 중심의 UI를 설계하고,
+    쇼핑하듯 쉽고 직관적인 인플루언서 탐색 경험(UX)을 제공합니다.`,
+    strategy: `미디어 중심의 프로필 카드: 인플루언서의 대표 영상과 이미지가 마우스 호버 시 즉시 재생되는
+    '숏폼 스타일 UI'를 적용하여 탐색의 몰입도를 높였습니다.
+    
+    직관적인 제안 프로세스: 복잡한 캠페인 제안서를 작성하는 대신,
+    몇 번의 클릭만으로 섭외 요청(Offer)을 보낼 수 있는 간편 제안 UX를 설계했습니다.
+    
+    모바일 최적화: 외부 활동이 많은 인플루언서의 특성을 고려하여,
+    협찬 제품 확인부터 콘텐츠 업로드 인증까지 모바일에서 완벽하게 구동되는 앱(APP) 환경을 구축했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-6.png',
+    detailImage: '/images/portfolio/detail6.jpg',
+    },
+    {
+    id: 4,
+    theme: 'HR / 자동화 / 어드민',
+    summary: '일용직 근로자 관리 A to Z 자동화 플랫폼',
+    overview: `"입사부터 정산까지, 일용직 근로자 관리의 A to Z 자동화"
+    매일 변동되는 수천 명의 현장 근로자 데이터를 체계적으로 관리하는 HR 플랫폼을 구축했습니다.
+    수기 작업에 의존하던 근로계약서 작성, 출역 확인, 급여 정산 프로세스를 디지털로 전환하여
+    현장 관리자의 업무 소요 시간을 80% 이상 단축시켰습니다.`,
+    strategy: `전자 근로계약 시스템: 현장 키오스크나 모바일을 통해 비대면으로 서명을 받고,
+    법적 효력이 있는 전자 문서를 자동 생성/보관하는 로직을 구현했습니다.
+    
+    대량 데이터 처리 UX: 엑셀 업로드/다운로드 기능을 고도화하고,
+    수백 명의 출퇴근 기록을 한 화면에서 끊김 없이 관리할 수 있는 '그리드(Grid) UI'를 최적화했습니다.
+    
+    교육 이력 통합 DB: 여러 현장을 이동하는 일용직 특성을 고려하여,
+    타 현장에서의 안전 교육 이력까지 통합 조회할 수 있는 근로자 생애 주기 관리 시스템을 구축했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-8.png',
+    detailImage: '/images/portfolio/detail8.jpg',
+    },
+    {
+    id: 5,
+    theme: '렌탈 / 커머스',
+    summary: '자영업자 전용 B2B 렌탈 중개 플랫폼',
+    overview: `"초기 창업 비용을 '구독'으로 혁신한 자영업자 전용 B2B 렌탈 중개 플랫폼"
+    목돈이 드는 집기 구매 대신, 인터넷·정수기·POS·CCTV 등을 합리적인 월 렌탈료로 이용할 수 있도록 돕습니다.
+    파편화된 렌탈 시장의 가격을 투명하게 공개하고 최저가를 매칭해 주는 플랫폼입니다.`,
+    strategy: `최저가 비교 알고리즘: 통신사 및 렌탈사별 복잡한 요금제와 약정 할인을 실시간으로 분석하여,
+    사용자 조건에 맞는 최적의 '최저가 조합'을 제안하는 로직을 개발했습니다.
+    
+    업종별 맞춤 패키지: 카페, 식당, 사무실 등 업종만 선택하면
+    필수 렌탈 품목을 원클릭으로 장바구니에 담아주는 '창업 패키지 추천 기능'을 구현했습니다.
+    
+    예상 견적 시뮬레이터: 36개월/48개월 등 약정 기간에 따른 월 납입금 변동을 그래프로 시각화하여,
+    예산 계획을 쉽게 세울 수 있도록 UX를 설계했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-5.png',
+    detailImage: '/images/portfolio/detail5.jpg',
+    },
+    {
+    id: 6,
+    theme: '브랜딩 / 랜딩페이지',
+    summary: 'AI 기술기업 아이덴티티 랜딩 사이트',
+    overview: `"인간의 감각과 인공지능의 경계를 탐구하는 기술기업 브랜딩"
+    AI 기반 기술력과 브랜드 철학을 직관적 인터랙션으로 전달하는 원페이지 반응형 랜딩 사이트를 구축했습니다.
+    기술기업의 아이덴티티를 시각적으로 표현하고 글로벌 유저 경험을 고려한 설계를 적용했습니다.`,
+    strategy: `미래지향적 비주얼: 어두운 컬러톤과 유동적인 그래픽을 활용해
+    기술적 깊이와 미래지향적 이미지를 강조했습니다.
+    
+    스크롤 인터랙션: 스크롤 중심의 인터랙션과 섹션 전환 효과로
+    브랜드의 비전을 감각적으로 경험할 수 있도록 설계했습니다.
+    
+    반응형 원페이지 구조: 다양한 디바이스에서 일관된 브랜드 경험을 제공하도록
+    최적화된 반응형 레이아웃을 구현했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-1.png',
+    detailImage: '/images/portfolio/detail1.jpg',
+    },
+    {
+    id: 7,
+    theme: 'AI / 견적 자동화',
+    summary: 'AI 기반 실시간 맞춤형 자동견적 플랫폼',
+    overview: `"특수 장비 시장의 복잡한 견적 산정을 AI로 자동화"
+    특수 장비 시장의 복잡한 견적 산정을 AI와 빅데이터로 자동화했습니다.
+    실시간 맞춤형 견적을 제공하는 자동화 플랫폼을 구축했습니다.`,
+    strategy: `AI 견적 산출 로직: 사용자 입력 데이터를 기반으로 제품 사양에 맞는 견적을
+    자동 산출하도록 알고리즘을 설계했습니다.
+    
+    데이터 구조 최적화: 견적 프로세스 속도를 향상시키기 위해
+    데이터 구조를 최적화하고 빅데이터 분석 체계를 구축했습니다.
+    
+    실시간 관리자 UI: 관리자가 실시간으로 견적 결과를 확인하고
+    수정할 수 있는 직관적인 대시보드를 구현했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-4.png',
+    detailImage: '/images/portfolio/detail4.jpg',
+    },
+    {
+    id: 8,
+    theme: 'AI / 로보틱스 / 브랜딩',
+    summary: '글로벌 딥테크 기업 브랜딩 웹사이트',
+    overview: `"인류와 로봇이 공존하는 미래, 글로벌 딥테크(Deep-tech) 기업 브랜딩"
+    AI 비전 기술과 자율주행 로보틱스를 결합하여 산업 현장의 안전을 혁신하는 글로벌 기업의 웹사이트를 구축했습니다.
+    보이지 않는 알고리즘 기술을 시각화하여 독보적인 기술 리더십을 표현했습니다.`,
+    strategy: `기술의 시각화(Visualization): 추상적인 AI 알고리즘과 센서 데이터를 직관적인 3D 그래픽과 모션으로 구현하여,
+    기술의 작동 원리를 언어 장벽 없이 이해할 수 있도록 설계했습니다.
+    
+    글로벌 스탠다드 UI: 전 세계 파트너사와 투자자가 접속하는 점을 고려하여,
+    글로벌 웹 접근성 표준을 준수하고 직관적인 내비게이션 구조를 적용했습니다.
+    
+    신뢰감을 주는 다크 모드: 첨단 기술 기업의 무게감과 정밀함을 표현하기 위해 다크 테마를 베이스로 하되,
+    브랜드 컬러인 네온 블루를 포인트로 사용하여 미래지향적인 무드를 완성했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-11.png',
+    detailImage: '/images/portfolio/detail11.jpg',
+    },
+    {
+    id: 9,
+    theme: 'O2O / 안전관리 / 모바일',
+    summary: '실시간 O2O 스마트 안전 관리 시스템',
+    overview: `"현장과 사무실을 실시간으로 연결하는 스마트 안전 관제탑"
+    서류 작업에 치여 정작 현장을 볼 수 없는 안전관리자의 고충을 해결했습니다.
+    모바일(APP)로 현장 상황을 실시간 공유하고, 웹(WEB)에서 통합 관리하는 유기적인 O2O 안전 시스템입니다.`,
+    strategy: `모바일 중심의 UX: 고령의 현장 근로자도 장갑을 낀 채 쉽게 조작할 수 있도록
+    버튼 크기를 키우고 입력 단계를 최소화한 현장 친화적 UI를 개발했습니다.
+    
+    실시간 위험 알림: 현장에서 발견된 유해 위험 요인을 앱으로 촬영해 올리면,
+    즉시 관리자에게 전송되고 조치 결과까지 실시간으로 추적하는 양방향 프로세스를 구현했습니다.
+    
+    위치 기반 안전 관리: GPS와 비콘 기술을 활용하여 근로자의 위치에 따른
+    맞춤형 안전 수칙을 팝업으로 제공하고 출입을 통제하는 기능을 탑재했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-12.png',
+    detailImage: '/images/portfolio/detail12.jpg',
+    },
+    {
+    id: 10,
+    theme: 'AI / 육아 / 플랫폼',
+    summary: '전문가 노하우 기반 프리미엄 육아 플랫폼',
+    overview: `"검증된 전문가의 노하우를 기술로 완성한 프리미엄 육아 플랫폼"
+    오프라인에 한정되어 있던 전문가의 영향력을 온라인으로 확장했습니다.
+    신뢰할 수 있는 전문 콘텐츠와 AI 기술을 결합하여 독보적인 육아 전문 브랜드 아이덴티티를 구축했습니다.`,
+    strategy: `전문성 기반의 정보 구조화(IA): 방대한 육아 정보를 사용자가 체계적으로 습득할 수 있도록,
+    전문가의 커리큘럼을 기반으로 정보 구조를 재설계했습니다.
+    
+    AI 기반 맞춤 처방: 사용자가 입력한 아이의 기질 데이터를 AI가 분석하여,
+    전문가가 직접 코칭 하듯 상황별 맞춤 솔루션을 즉각적으로 매칭해줍니다.
+    
+    일관된 톤앤매너: 웹과 앱, 상세 페이지 전반에 통일된 브랜드 컬러와 타이포그래피를 적용하여
+    신뢰감 있는 브랜드 이미지를 전달했습니다.`,
+    thumbnail: '/thumbnail/thumbnail-7.png',
+    detailImage: '/images/portfolio/detail7.jpg',
+    },
+    {
+    id: 11,
+    theme: 'AI / 사업계획서',
+    summary: '합격률 높은 AI 기획서 솔루션',
+    overview: `"데이터로 증명하는 합격률 높은 기획서 솔루션"
+    수만 건의 합격 데이터를 학습한 AI가 평가 지표에 딱 맞는 논리 구조를 제안합니다.
+    단순 작성을 넘어, 설득력 있는 비즈니스 스토리텔링을 완성하는 전략적 도구입니다.`,
+    strategy: `평가 지표 매칭 알고리즘: 정부지원사업 및 투자 유치 심사 기준을 분석하여,
+    필수 항목 누락을 방지하고 가산점 요소를 제안하는 로직을 탑재했습니다.
+    
+    비즈니스 모델 진단: 작성된 내용을 바탕으로 비즈니스 모델의 약점을 분석하고
+    보완점을 제시하는 'AI 컨설팅 기능'을 도입했습니다.
+    
+    업종별 템플릿 고도화: 다양한 산업군의 데이터를 학습하여,
+    IT·제조·서비스 등 각 분야에 최적화된 용어와 톤앤매너를 자동으로 적용합니다.`,
+    thumbnail: '/thumbnail/thumbnail-9.png',
+    detailImage: '/images/portfolio/detail9.jpg',
+    },
+    {
+    id: 12,
+    theme: '커머스 / 쇼룸 / 3D',
+    summary: '브랜드 감성과 커머스를 결합한 올인원 솔루션',
+    overview: `"브랜드의 감성과 커머스의 기능을 결합한 올인원 솔루션"
+    클라이언트의 추상적인 아이디어를 구체적인 비즈니스 모델로 시각화했습니다.
+    인테리어 시장의 특성을 분석하여 브랜드 쇼룸의 가치를 웹상에 완벽하게 구현한 프로젝트입니다.`,
+    strategy: `비즈니스 맞춤형 UX 기획: 오프라인 쇼룸의 경험을 온라인으로 옮기기 위해,
+    3D 뷰어 도입을 기획 단계부터 제안하고 기술적으로 구현했습니다.
+    
+    운영 효율화 시스템: 개발 지식이 없는 관리자도 손쉽게 기획전과 상품을 관리할 수 있도록
+    직관적인 관리자 페이지(Admin)를 커스텀 개발했습니다.
+    
+    SEO(검색엔진 최적화): 브랜드 런칭 초기, 자연 유입을 늘리기 위해
+    검색 엔진 친화적인 구조로 사이트를 설계하여 마케팅 효율을 높였습니다.`,
+    thumbnail: '/thumbnail/thumbnail-2.png',
+    detailImage: '/images/portfolio/detail2.jpg',
+    },
+    ]
