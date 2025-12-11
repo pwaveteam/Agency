@@ -40,7 +40,8 @@ className="section-description"
 <span className="md:hidden">
 시장에 개발사는 많지만,<br />
 든든한 비즈니스 파트너를 찾는다면<br />
-퍼스가 정답입니다.
+퍼스가 정답입니다.<br />
+화려한 미사여구보다 견고한 결과물로 증명합니다.
 </span>
 </motion.p>
 

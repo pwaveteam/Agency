@@ -41,7 +41,7 @@ transition={{duration:0.8,ease:'easeOut'}}
 viewport={{once:true,amount:0.3}}
 className="banner-block mb-[30px]"
 >
-“이런 것도 가능할까?” 망설여진다면,<br />가벼운 질문으로 시작해보세요.
+“이런 것도 가능할까?”<br />망설여진다면,<br />가벼운 질문으로 시작해보세요.
 </motion.h2>
 
 <motion.p
